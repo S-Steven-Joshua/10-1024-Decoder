@@ -1,0 +1,14 @@
+module decoder_10_tb();
+reg [9:0] a;
+wire [1023:0] y;
+integer i;
+decoder_10 a1(a,y);
+initial
+begin
+for(i=0;i<1024;i=i+1)
+begin
+a=i;
+#10;
+end
+end 
+endmodule
